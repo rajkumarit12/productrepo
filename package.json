@@ -1,0 +1,20 @@
+{
+  "name": "productcatalog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "rajkumar",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^16.5.2",
+    "pg": "^7.4.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
